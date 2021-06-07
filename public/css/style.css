@@ -1,0 +1,277 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+}
+
+.tombol-sign {
+    /* text-transform: uppercase; */
+    border-radius: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.img-slider {
+    background-image: url(../fixed-images/img-slider.jpg);
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.img-slider .container {
+    position: relative;
+    z-index: 1;
+}
+
+.img-slider::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 86%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.img-slider .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin-bottom: 70px;
+}
+
+.img-slider .display-4 span {
+    font-weight: 500;
+}
+
+.judul {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 24px; */
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.warna-linear {
+    background: linear-gradient(to right, rgba(91, 134, 229, .92), rgba(54, 209, 220, .92));
+}
+
+.jumbotron-bg {
+    background-size: cover;
+    background: url(../fixed-images/icons.png);
+    background-size: 300px;
+}
+
+.profil-company-bg {
+    background: url('../fixed-images/profil-company-bg.jpg');
+    background-attachment: fixed;
+    background-size: 1920px 1200px;
+    background-position: 0 -450px;
+}
+
+.listLayanan {
+    border-radius: 12px;
+    border: 2px solid #150544;
+    text-align: center;
+    position: relative;
+}
+
+.listLayanan .img-top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.listLayanan:hover {
+    background-color: #007BED;
+    color: #FFFFFF;
+    border: 2px solid #007BED;
+}
+
+.listLayanan:hover .img-top {
+    display: inline;
+}
+
+/* delete aja gpp */
+/* .card:hover .icon-layanan {
+    background-image: url(images/exam-hover.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+
+.icon-layanan {
+    background-image: url(images/konsul.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+} */
+
+.layanan h5 {
+    font-weight: 300;
+    color: #828282;
+}
+
+.listFasilitas {
+    background-color: #150544;
+    border-radius: 16px;
+    padding: 1px 1px 0px 1px;
+}
+
+.listFasilitas img {
+    border-radius: 14px 14px 0 0;
+}
+
+.listFasilitas h4 {
+    color: #FFFFFF;
+}
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    background-color: white;
+    margin-top: -120px;
+    padding: 30px;
+}
+
+.info-panel img {
+    height: 84px;
+    width: 84px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel:hover {
+    /* font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px; */
+    background-color: #1C2C5D;
+    color: #FFFFFF;
+}
+
+.info-panel p {
+    font-size: 16px;
+    color: #acacac;
+}
+
+.working-space {
+    margin-top: 120px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.working-space h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: #1C2C5D;
+}
+
+.working-space h3 span {
+    font-weight: 500;
+}
+
+.working-space p {
+    font-size: 20px;
+    font-weight: 240;
+    margin-bottom: 30px;
+    color: #acacac;
+}
+
+.testimonial h5 {
+    font-style: italic;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 280;
+    color: #1C2C5D;
+    margin: 30px 0;
+}
+
+.testimonial figure img {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+}
+
+.testimonial figure h4 {
+    color: #1C2C5D;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    padding-top: 30px;
+    color: #eaeaea;
+}
+
+/* FOR DESKTOP */
+@media (min-width: 992px) {
+
+    .navbar-brand,
+    .nav-link {
+        font-weight: 500;
+        font-size: 18px;
+        /* color: #101010 !important; */
+        /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); */
+    }
+
+    .nav-item {
+        /* text-transform: uppercase; */
+        margin-right: 16px;
+    }
+
+    /* .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 4px solid #0B63DC;
+        border-radius: 2px;
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: -9px;
+    } */
+
+    .img-slider {
+        /* margin-top: -75px; */
+        height: 720px;
+        background-size: 1550px 1000px;
+        background-position: 0 -260px;
+    }
+
+    .img-slider .display-4 {
+        font-size: 64px;
+    }
+
+    .working-space {
+        text-align: left;
+    }
+
+    .testimonial h5 {
+        font-size: 32px;
+    }
+}
